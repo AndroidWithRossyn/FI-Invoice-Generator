@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="onBackClick"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="onAddClick"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_right_bottom_45_blue_gradient"
+        android:elevation="5dp"
+        android:minHeight="60dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_iv_back"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:elevation="5dp"
+            android:onClick="@{onBackClick}"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_toStartOf="@id/ivAdd"
+            android:layout_toEndOf="@id/ivBack"
+            android:fontFamily="@font/poppins_normal"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="@{title}"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_iv_add"
+            android:contentDescription="@null"
+            android:elevation="5dp"
+            android:visibility="gone"
+            android:onClick="@{onAddClick}"
+            android:padding="10dp" />
+
+    </RelativeLayout>
+</layout>

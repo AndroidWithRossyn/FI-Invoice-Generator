@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_round_shape_10dp"
+        android:elevation="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_dialog_add_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toLeftOf="@id/bt_delete_my_item"
+                android:fontFamily="@font/poppins_normal"
+                android:gravity="center"
+                android:padding="5dp"
+                android:shadowDy="3"
+                android:text="@string/add_new_item"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- delete btn -->
+            <ImageButton
+                android:id="@+id/bt_delete_my_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_centerVertical="true"
+                android:background="#00ffffff"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_iv_delete" />
+
+        </RelativeLayout>
+
+        <!-- item image -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_dialog_add_item_pic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_company_logo" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_normal"
+                    android:text="@string/item_image"
+                    android:textColor="@color/title_field_color_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- remove text btn -->
+            <TextView
+                android:id="@+id/bt_remove_add_my_item_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/remove"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_normal"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <!-- item Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/item_name"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_dialog_add_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/card_shape_10dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins_normal"
+                android:hint="@string/description_of_item"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:minHeight="50dp"
+                android:padding="5dp"
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/my_black"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- item price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/item_price"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_dialog_add_item_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/card_shape_10dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins_normal"
+                android:hint="@string/price_of_the_item"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:maxLength="9"
+                android:minHeight="50dp"
+                android:padding="5dp"
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/my_black"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Cancel btn -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_dialog_cancel_add_my_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_white_radius_13dp"
+                android:fontFamily="@font/poppins_normal"
+                android:shadowColor="#9ccdfd"
+                android:text="@string/cancel_add_item_dialog"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlue4"
+                android:textSize="14sp" />
+            <!-- add btn -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_dialog_add_my_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_gradiant"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/add"
+                android:textAllCaps="false"
+                android:textColor="@color/my_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

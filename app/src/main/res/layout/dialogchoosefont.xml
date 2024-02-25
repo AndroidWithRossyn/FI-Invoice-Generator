@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_round_background_10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_delete_caption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_normal"
+            android:text="@string/shop_title_font_choose_font"
+            android:textColor="@color/title_field_color_blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/btn_default_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlue4"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/default_font_choose_font"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/btn_poppins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlue4"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/poppins_normal"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/btn_montserrat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlue4"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/montserrat_regular"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/btn_inter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlue4"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/inter_regular"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/btn_roboto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlue4"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/roboto_regular"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/btn_moulpali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlue4"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/moulpali_regular"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/btn_murecho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlue4"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/murecho_regular"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/btn_mplus1p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlue4"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/mplus1p_regular"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/btn_port_lligat_sans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlue4"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/port_lligat_sans_regular"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/btn_pontano_sans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlue4"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/pontano_sans_regular"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/btn_poly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlue4"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/poly_regular"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Cancel btn -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_dialog_cancel_set_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_white_radius_13dp"
+                android:fontFamily="@font/poppins_normal"
+                android:shadowColor="#9ccdfd"
+                android:text="@string/cancel_choose_font"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlue4"
+                android:textSize="14sp" />
+            <!-- add btn -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_dialog_set_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_gradiant"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/set_choose_font"
+                android:textAllCaps="false"
+                android:textColor="@color/my_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_round_background_10dp"
+    android:elevation="20dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_dialog_delete_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="8"
+        android:fontFamily="@font/poppins_normal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:shadowDy="3"
+        android:text="@string/delete_item_dialog_delete"
+        android:textColor="@color/title_field_color_blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_dialog_delete_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="8"
+        android:fontFamily="@font/poppins_normal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:shadowDy="3"
+        android:text="@string/are_you_sure_you_want_to_delete_this_item_this_cannot_be_undone_dialog_delete"
+        android:textColor="@color/title_field_color_blue"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_gravity=""
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!-- Cancel btn -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_dialog_cancel_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_radius_13dp"
+            android:elevation="3dp"
+            android:fontFamily="@font/poppins_normal"
+            android:shadowColor="#9ccdfd"
+            android:text="@string/cancel_dialog_delete"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlue4"
+            android:textSize="14sp" />
+        <!-- add btn -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_dialog_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_gradiant"
+            android:elevation="3dp"
+            android:fontFamily="@font/poppins_normal"
+            android:text="@string/delete_dialog_delete"
+            android:textAllCaps="false"
+            android:textColor="@color/my_white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

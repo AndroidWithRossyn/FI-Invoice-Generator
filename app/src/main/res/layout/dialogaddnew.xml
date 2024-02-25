@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="285dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/dialog_round_background_10dp"
+    android:elevation="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_delete_caption"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="8"
+        android:fontFamily="@font/poppins_normal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:shadowDy="3"
+        android:text="@string/add_new_item_dialog"
+        android:textColor="@color/title_field_color_blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <!-- item Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_normal"
+            android:text="@string/item_name_add_new"
+            android:textColor="@color/title_field_color_blue"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/et_update_dialog_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/card_shape_10dp"
+                android:ems="10"
+                android:maxLength="20"
+                android:fontFamily="@font/poppins_normal"
+                android:hint="@string/name_of_the_item_add_new_dialog"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:minHeight="50dp"
+                android:padding="5dp"
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/my_black"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/btn_show_spinner_item"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#00ffffff"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_iv_arrow_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- item count -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_normal"
+            android:text="@string/item_count_add_new"
+            android:textColor="@color/title_field_color_blue"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/et_dialog_update_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="2"
+                android:background="@drawable/card_shape_10dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins_normal"
+                android:hint="@string/item_count_add_new_dialog"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="4"
+                android:minHeight="50dp"
+                android:padding="5dp"
+                android:paddingHorizontal="12dp"
+                android:text="@string/_1_add_new_dialog"
+                android:textColor="@color/my_black"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+            <!-- Increase & Decrease buttons -->
+            <ImageButton
+                android:id="@+id/btn_dialog_count_down"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:background="#00ffffff"
+                android:contentDescription="@null"
+                android:visibility="gone"
+                app:srcCompat="@drawable/count_down_grey35" />
+
+            <ImageButton
+                android:id="@+id/btn_dialog_count_up"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:background="#00ffffff"
+                android:contentDescription="@null"
+                android:visibility="gone"
+                app:srcCompat="@drawable/count_up35" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- item price -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_normal"
+            android:text="@string/price_per_item_add_new"
+            android:textColor="@color/title_field_color_blue"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_dialog_update_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/card_shape_10dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins_normal"
+            android:hint="@string/price_per_item_add_new_dialog"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:maxLength="8"
+            android:minHeight="50dp"
+            android:padding="5dp"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/my_black"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <!-- Cancel btn -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_dialog_cancel_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_radius_13dp"
+            android:fontFamily="@font/poppins_normal"
+            android:shadowColor="#9ccdfd"
+            android:text="@string/cancel_add_new_customer_dialog"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlue4"
+            android:textSize="14sp" />
+        <!-- add btn -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_dialog_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_gradiant"
+            android:fontFamily="@font/poppins_normal"
+            android:text="@string/add_add_new_customer_dialog"
+            android:textAllCaps="false"
+            android:textColor="@color/my_white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

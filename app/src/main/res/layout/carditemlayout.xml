@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- no -->
+        <TextView
+            android:id="@+id/tv_id_printed"
+            android:layout_width="26dp"
+            android:layout_height="0dp"
+            android:background="@drawable/frame_blue"
+            android:gravity="end"
+            android:paddingVertical="3dp"
+            android:paddingBottom="2dp"
+            android:textAlignment="center"
+            android:textColor="#575757"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_item_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_item_name"
+            tools:ignore="RtlCompat" />
+        <!-- item des. -->
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/frame_blue"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"
+            android:textAlignment="center"
+            android:textColor="#575757"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_normal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_item_count"
+            app:layout_constraintStart_toEndOf="@+id/tv_id_printed"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!-- qty -->
+        <TextView
+            android:id="@+id/tv_item_count"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:background="@drawable/frame_blue"
+            android:paddingVertical="3dp"
+            android:paddingBottom="2dp"
+            android:textAlignment="center"
+            android:textColor="#575757"
+            android:textSize="14sp"
+            android:visibility="visible"
+            android:fontFamily="@font/poppins_normal"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_item_name"
+            app:layout_constraintEnd_toStartOf="@+id/tv_item_price"
+            app:layout_constraintTop_toTopOf="@+id/tv_item_name" />
+        <!-- unit price -->
+        <TextView
+            android:id="@+id/tv_item_price"
+            android:layout_width="74dp"
+            android:layout_height="0dp"
+            android:background="@drawable/frame_blue"
+            android:paddingVertical="3dp"
+            android:paddingBottom="2dp"
+            android:textAlignment="center"
+            android:textColor="#575757"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_normal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_item_count"
+            app:layout_constraintEnd_toStartOf="@+id/tv_item_total"
+            app:layout_constraintTop_toTopOf="@+id/tv_item_count" />
+        <!-- total -->
+        <TextView
+            android:id="@+id/tv_item_total"
+            android:layout_width="84dp"
+            android:layout_height="0dp"
+            android:background="@drawable/frame_blue"
+            android:paddingVertical="3dp"
+            android:paddingBottom="2dp"
+            android:textAlignment="center"
+            android:textColor="#575757"
+            android:fontFamily="@font/poppins_normal"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_item_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_item_price" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

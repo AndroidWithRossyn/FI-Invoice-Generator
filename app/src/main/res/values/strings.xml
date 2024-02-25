@@ -1,0 +1,620 @@
+<resources>
+    <string name="app_name">Invoice Generator</string>
+
+    <string name="use_no_currency">Use No Currency</string>
+    <string name="create_own_currency">Create Own Currency</string>
+    <string name="emirati_dirham">AED (Emirati Dirham)</string>
+    <string name="afghan_afghani">AFN (Afghan Afghani)</string>
+    <string name="albanian_lef">ALL (Albanian Lef)</string>
+    <string name="armenian_dram">AMD (Armenian Dram)</string>
+    <string name="angolan_kwanza">AOA (Angolan Kwanza)</string>
+    <string name="argentine_peso">ARS (Argentine Peso)</string>
+    <string name="australian_dollar">AUD (Australian Dollar)</string>
+    <string name="aruban_florin">AWG (Aruban Florin)</string>
+    <string name="azerbaijan_new_manat">AZN (Azerbaijan New Manat)</string>
+    <string name="bosnian_mark">BAM (Bosnian Mark)</string>
+    <string name="barbados_dollar">BBD (Barbados Dollar)</string>
+    <string name="bangladeshi_taka">BDT (Bangladeshi Taka)</string>
+    <string name="bulgarian_lev">BGN (Bulgarian Lev)</string>
+    <string name="dahraini_dinar">BBH (Dahraini Dinar)</string>
+    <string name="burundi_franc">BIF (Burundi Franc)</string>
+    <string name="bermudian_dollar">BMD (Bermudian Dollar)</string>
+    <string name="bruneian_dollar">BND (Bruneian Dollar)</string>
+    <string name="bolivian_boliviano">BOB (Bolivian Boliviano)</string>
+    <string name="brazilian_real">BRL (Brazilian Real)</string>
+    <string name="bahamian_dollar">BSD (Bahamian Dollar)</string>
+    <string name="bhutan_ngultrum">BTN (Bhutan Ngultrum)</string>
+    <string name="botswana_pula">BWP (Botswana Pula)</string>
+    <string name="belarusian_ruble">BYR (Belarusian Ruble)</string>
+    <string name="belize_dollar">BZD (Belize Dollar)</string>
+    <string name="canadian_dollar">CAD (Canadian Dollar)</string>
+    <string name="swiss_franc">CHF (Swiss Franc)</string>
+    <string name="chilean_peso">CLP (Chilean Peso)</string>
+    <string name="colombian_peso">COP (Colombian Peso)</string>
+    <string name="costa_rican_colon">CRC (Costa Rican Colon)</string>
+    <string name="cape_verde_escudo">CVE (Cape Verde Escudo)</string>
+    <string name="czech_koruna">CZK (Czech Koruna)</string>
+    <string name="djibouti_franc">DJF (Djibouti Franc)</string>
+    <string name="danish_krone">DKK (Danish Krone)</string>
+    <string name="dominican_peso">DOP (Dominican Peso)</string>
+    <string name="algerian_dinar">DZD (Algerian Dinar)</string>
+    <string name="egypian_pound">EGP (Egypian Pound)</string>
+    <string name="eritrean_nakfa">ERN (Eritrean Nakfa)</string>
+    <string name="ethiopian_birr">ETB (Ethiopian Birr)</string>
+    <string name="euro">EUR (Euro)</string>
+    <string name="fijian_dollar">FJD (Fijian Dollar)</string>
+    <string name="falkland_islands_pound">FKP (Falkland Islands Pound)</string>
+    <string name="british_pound">GBP (British Pound)</string>
+    <string name="georgian_lari">GEL (Georgian Lari)</string>
+    <string name="ghanaian_cedi">GHS (Ghanaian Cedi)</string>
+    <string name="gibraltar_pound">GIP (Gibraltar Pound)</string>
+    <string name="gambian_dalasi">GMD (Gambian Dalasi)</string>
+    <string name="guinea_franc">GNF (Guinea Franc)</string>
+    <string name="guatemalan_quetzal">GTQ (Guatemalan Quetzal)</string>
+    <string name="guyanan_dollar">GYD (Guyanan Dollar)</string>
+    <string name="hong_kong_dollar">HKD (Hong Kong Dollar)</string>
+    <string name="honduran_lempira">HNL (Honduran Lempira)</string>
+    <string name="croatian_kuna">HRK (Croatian Kuna)</string>
+    <string name="haitian_gourde">HTG (Haitian Gourde)</string>
+    <string name="hungarian_forint">HUF (Hungarian Forint)</string>
+    <string name="indonesian_rupiah">IDR (Indonesian Rupiah)</string>
+    <string name="israeli_shekel">ILS (Israeli Shekel)</string>
+    <string name="indian_rupee">INR (Indian Rupee)</string>
+    <string name="iraqiDinar">IQD (Iraqi Dinar)</string>
+    <string name="icelandKrona">ISK (Iceland Krona)</string>
+    <string name="jamaicanDollar">JMD (Jamaican Dollar)</string>
+    <string name="jordanianDinar">JOD (Jordanian Dinar)</string>
+    <string name="japaneseYen">JPY (Japanese Yen)</string>
+    <string name="kenyanShilling">KES (Kenyan Shilling)</string>
+    <string name="comoros_franc">KMF (Comoros Franc)</string>
+    <string name="southKoreanWon">KRW (South Korean Won)</string>
+    <string name="kuwaitiDinar">KWD (Kuwaiti Dinar)</string>
+    <string name="caymanIslandsDollar">KYD (Cayman Islands Dollar)</string>
+    <string name="kazakhstaniTenge">KZT (Kazakhstani Tenge)</string>
+    <string name="laoKip">LAK (Lao Kip))</string>
+    <string name="lebanesePound">LBP (Lebanese Pound)</string>
+    <string name="sriLankanRupee">LKR (Sri Lankan Rupee)</string>
+    <string name="lesothoLoti">LSL (Lesotho Loti)</string>
+    <string name="libyanDinar">LYD (Libyan Dinar)</string>
+    <string name="moroccanDirham">MAD (Moroccan Dirham)</string>
+    <string name="moldovanLeu">MDL (Moldovan Leu)</string>
+    <string name="myanmarKyat">MMK (Myanmar Kyat)</string>
+    <string name="mongolianTugrik">MNT (Mongolian Tugrik)</string>
+    <string name="macauPataca">MOP (Macau Pataca)</string>
+    <string name="mauritianRupee">MUR (Mauritian Rupee)</string>
+    <string name="maldiveRufiyaa">MVR (Maldive Rufiyaa)</string>
+    <string name="mexicanPeso">MXN (Mexican Peso)</string>
+    <string name="malaysianRinggit">MYR (Malaysian Ringgit)</string>
+    <string name="namibiaDollar">NAD (Namibia Dollar)</string>
+    <string name="nigerianNaira">NGN (Nigerian Naira)</string>
+    <string name="nicaraguanCordobaOro">NIO (Nicaraguan Cordoba Oro)</string>
+    <string name="nepaleseRupee">NPR (Nepalese Rupee)</string>
+    <string name="newZealandDollar">NZD (New Zealand Dollar)</string>
+    <string name="omaniRial">OMR (Omani Rial)</string>
+    <string name="panamanianBalboa">PAB (Panamanian Balboa)</string>
+    <string name="peruvianSol">PEN (Peruvian Sol)</string>
+    <string name="papuaNewGuineaKina">PGK (Papua New Guinea Kina)</string>
+    <string name="philippinePeso">PHP (Philippine Peso)</string>
+    <string name="polishZloty">PLN (Polish Zloty)</string>
+    <string name="paraguayGuarani">PYG (Paraguay Guarani)</string>
+    <string name="qatariRiyal">QAR (Qatari Riyal)</string>
+    <string name="romanianNewLeu">RON (Romanian New Leu)</string>
+    <string name="serbianDinar">RSD (Serbian Dinar)</string>
+    <string name="russianRuble">RUB (Russian Ruble)</string>
+    <string name="rwandanFranc">RWF (Rwandan Franc)</string>
+    <string name="saudiArabianRiyal">SAR (Saudi Arabian Riyal)</string>
+    <string name="solomonIslandsDollar">SBD (Solomon Islands Dollar)</string>
+    <string name="seychellesRupee">SCR (Seychelles Rupee)</string>
+    <string name="swedishKrona">SEK (Swedish Krona)</string>
+    <string name="singaporeDollar">SGD (Singapore Dollar)</string>
+    <string name="StHelenaPound">SHP (St. Helena Pound)</string>
+    <string name="sierraLeoneLeone">SLL (Sierra Leone Leone)</string>
+    <string name="somaliShilling">SOS (Somali Shilling)</string>
+    <string name="surinameDollar">SRD (Suriname Dollar)</string>
+    <string name="saoTomePrincipeDobra">STD (Sao Tome/Principe Dobra)</string>
+    <string name="elSalvadorColon">SVC (El Salvador Colon)</string>
+    <string name="swaziLilangeni">SZL (Swazi Lilangeni)</string>
+    <string name="thaiBaht">THB (Thai Baht)</string>
+    <string name="TajikistanSomoni">TJS (Tajikistan Somoni)</string>
+    <string name="turkmenistanNewManat">TMT (Turkmenistan New Manat)</string>
+    <string name="tunisianDinar">TND (Tunisian Dinar)</string>
+    <string name="Tongan">TOP (Tongan Pa&amp;anga)</string>
+    <string name="turkishLira">TRY (Turkish Lira)</string>
+    <string name="trinidadianDollar">TTD (Trinidadian Dollar)</string>
+    <string name="taiwanDollar">TWD (Taiwan Dollar)</string>
+    <string name="tanzanianShilling">TZS (Tanzanian Shilling)</string>
+    <string name="ukrainianHryvnia">UAH (Ukrainian Hryvnia)</string>
+    <string name="ugandaShilling">UGX (Uganda Shilling)</string>
+    <string name="uSDollar">USD (US Dollar)</string>
+    <string name="uzbekistanSom">UZS (Uzbekistan Som)</string>
+    <string name="uruguayanPeso">UYU (Uruguayan Peso)</string>
+    <string name="vietnameseDong">VND (Vietnamese Dong)</string>
+    <string name="vanuatuVatu">VUV (Vanuatu Vatu)</string>
+    <string name="yemenrial">YER (Yemen Rial)</string>
+    <string name="southAfricanRand">ZAR (South African Rand)</string>
+
+
+    <!--    Currencies List -->
+    <string-array name="currencies">
+        <item>@string/use_no_currency</item>
+        <item>@string/create_own_currency</item>
+        <item>@string/emirati_dirham</item>
+        <item>@string/afghan_afghani</item>
+        <item>@string/albanian_lef</item>
+        <item>@string/armenian_dram</item>
+        <item>@string/angolan_kwanza</item>
+        <item>@string/argentine_peso</item>
+        <item>@string/australian_dollar</item>
+        <item>@string/australian_dollar</item>
+        <item>@string/aruban_florin</item>
+        <item>@string/azerbaijan_new_manat</item>
+        <item>@string/bosnian_mark</item>
+        <item>@string/barbados_dollar</item>
+        <item>@string/bangladeshi_taka</item>
+        <item>@string/bulgarian_lev</item>
+        <item>@string/dahraini_dinar</item>
+        <item>@string/burundi_franc</item>
+        <item>@string/bermudian_dollar</item>
+        <item>@string/bruneian_dollar</item>
+        <item>@string/bolivian_boliviano</item>
+        <item>@string/brazilian_real</item>
+        <item>@string/bahamian_dollar</item>
+        <item>@string/bhutan_ngultrum</item>
+        <item>@string/botswana_pula</item>
+        <item>@string/belarusian_ruble</item>
+        <item>@string/belize_dollar</item>
+        <item>@string/canadian_dollar</item>
+        <item>@string/swiss_franc</item>
+        <item>@string/chilean_peso</item>
+        <item>@string/colombian_peso</item>
+        <item>@string/costa_rican_colon</item>
+        <item>@string/cape_verde_escudo</item>
+        <item>@string/czech_koruna</item>
+        <item>@string/djibouti_franc</item>
+        <item>@string/danish_krone</item>
+        <item>@string/dominican_peso</item>
+        <item>@string/algerian_dinar</item>
+        <item>@string/egypian_pound</item>
+        <item>@string/eritrean_nakfa</item>
+        <item>@string/ethiopian_birr</item>
+        <item>@string/euro</item>
+        <item>@string/fijian_dollar</item>
+        <item>@string/falkland_islands_pound</item>
+        <item>@string/british_pound</item>
+        <item>@string/georgian_lari</item>
+        <item>@string/ghanaian_cedi</item>
+        <item>@string/gibraltar_pound</item>
+        <item>@string/gambian_dalasi</item>
+        <item>@string/guinea_franc</item>
+        <item>@string/guatemalan_quetzal</item>
+        <item>@string/guyanan_dollar</item>
+        <item>@string/hong_kong_dollar</item>
+        <item>@string/honduran_lempira</item>
+        <item>@string/croatian_kuna</item>
+        <item>@string/haitian_gourde</item>
+        <item>@string/hungarian_forint</item>
+        <item>@string/indonesian_rupiah</item>
+        <item>@string/israeli_shekel</item>
+        <item>@string/indian_rupee</item>
+        <item>@string/iraqiDinar</item>
+        <item>@string/icelandKrona</item>
+        <item>@string/jamaicanDollar</item>
+        <item>@string/jordanianDinar</item>
+        <item>@string/japaneseYen</item>
+        <item>@string/kenyanShilling</item>
+        <item>@string/comoros_franc</item>
+        <item>@string/southKoreanWon</item>
+        <item>@string/kuwaitiDinar</item>
+        <item>@string/caymanIslandsDollar</item>
+        <item>@string/kazakhstaniTenge</item>
+        <item>@string/laoKip</item>
+        <item>@string/lebanesePound</item>
+        <item>@string/sriLankanRupee</item>
+        <item>@string/lesothoLoti</item>
+        <item>@string/libyanDinar</item>
+        <item>@string/moroccanDirham</item>
+        <item>@string/moldovanLeu</item>
+        <item>@string/myanmarKyat</item>
+        <item>@string/mongolianTugrik</item>
+        <item>@string/macauPataca</item>
+        <item>@string/mauritianRupee</item>
+        <item>@string/maldiveRufiyaa</item>
+        <item>@string/mexicanPeso</item>
+        <item>@string/malaysianRinggit</item>
+        <item>@string/namibiaDollar</item>
+        <item>@string/nigerianNaira</item>
+        <item>@string/nicaraguanCordobaOro</item>
+        <item>@string/nepaleseRupee</item>
+        <item>@string/newZealandDollar</item>
+        <item>@string/omaniRial</item>
+        <item>@string/panamanianBalboa</item>
+        <item>@string/peruvianSol</item>
+        <item>@string/papuaNewGuineaKina</item>
+        <item>@string/philippinePeso</item>
+        <item>@string/polishZloty</item>
+        <item>@string/paraguayGuarani</item>
+        <item>@string/qatariRiyal</item>
+        <item>@string/romanianNewLeu</item>
+        <item>@string/serbianDinar</item>
+        <item>@string/russianRuble</item>
+        <item>@string/rwandanFranc</item>
+        <item>@string/saudiArabianRiyal</item>
+        <item>@string/solomonIslandsDollar</item>
+        <item>@string/seychellesRupee</item>
+        <item>@string/swedishKrona</item>
+        <item>@string/singaporeDollar</item>
+        <item>@string/StHelenaPound</item>
+        <item>@string/sierraLeoneLeone</item>
+        <item>@string/somaliShilling</item>
+        <item>@string/surinameDollar</item>
+        <item>@string/saoTomePrincipeDobra</item>
+        <item>@string/elSalvadorColon</item>
+        <item>@string/swaziLilangeni</item>
+        <item>@string/thaiBaht</item>
+        <item>@string/TajikistanSomoni</item>
+        <item>@string/turkmenistanNewManat</item>
+        <item>@string/tunisianDinar</item>
+        <item>@string/Tongan</item>
+        <item>@string/trinidadianDollar</item>
+        <item>@string/taiwanDollar</item>
+        <item>@string/tanzanianShilling</item>
+        <item>@string/ukrainianHryvnia</item>
+        <item>@string/ugandaShilling</item>
+        <item>@string/uSDollar</item>
+        <item>@string/uruguayanPeso</item>
+        <item>@string/uzbekistanSom</item>
+        <item>@string/vietnameseDong</item>
+        <item>@string/vanuatuVatu</item>
+        <item>@string/yemenrial</item>
+        <item>@string/southAfricanRand</item>
+    </string-array>
+
+    <string-array name="fonts">
+        <item>@string/actionis</item>
+        <item>@string/blkchcry</item>
+        <item>@string/chlor</item>
+        <item>@string/chubbyDotty</item>
+        <item>@string/edmunds</item>
+        <item>@string/fiddums_family</item>
+        <item>@string/haunting_attraction</item>
+        <item>@string/hemi_head</item>
+        <item>@string/kirsty</item>
+        <item>@string/octin_Stencil</item>
+        <item>@string/precious</item>
+        <item>@string/quikHand</item>
+        <item>@string/theGodfather</item>
+        <item>@string/tooneyNoodle</item>
+        <item>@string/xirod</item>
+    </string-array>
+
+    <string name="actionis">Actionis</string>
+    <string name="blkchcry">Blkchcry</string>
+    <string name="chlor">Chlor</string>
+    <string name="chubbyDotty">ChubbyDotty</string>
+    <string name="edmunds">Edmunds</string>
+    <string name="fiddums_family">Fiddums Family</string>
+    <string name="haunting_attraction">Haunting Attraction</string>
+    <string name="hemi_head">Hemi Head</string>
+    <string name="kirsty">Kirsty</string>
+    <string name="octin_Stencil">Octin Stencil</string>
+    <string name="precious">Precious</string>
+    <string name="quikHand">QuikHand</string>
+    <string name="theGodfather">TheGodfather</string>
+    <string name="tooneyNoodle">Tooney Noodle</string>
+    <string name="xirod">Xirod</string>
+
+    <string-array name="preloaded_fonts">
+        <item>@font/biryani</item>
+        <item>@font/cherry_swash</item>
+        <item>@font/coda</item>
+        <item>@font/emilys_candy</item>
+    </string-array>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="thanks">Thanks</string>
+    <string name="total">Total</string>
+    <string name="advance">Advance</string>
+    <string name="balance">Balance</string>
+
+
+    <!-- Nav menu -->
+    <string name="printed_invoices_title">Printed Invoices</string>
+    <string name="my_items_title">My Items</string>
+    <string name="favourite_customers_title">Customers</string>
+    <string name="business_info_settings_title">Business Info Settings</string>
+    <string name="output_image_quality_title">Output Image Quality</string>
+    <string name="about_this_app_title">About this app</string>
+    <string name="rate_us_title">Rate Us</string>
+    <string name="share_with_friends_title">Share with friends</string>
+    <string name="how_to_use_title">How to use</string>
+
+    <!--Splash Screen-->
+    <string name="invoice_generator_splash">Invoice Generator</string>
+    <!-- About Screen -->
+    <string name="generate_invoices_in_seconds_title">Generate Invoices in seconds</string>
+    <string name="invoice_generator">Invoice Generator</string>
+    <string name="invoice_generator1">Billing App</string>
+    <string name="version_1_0">Version 1.0</string>
+
+    <!-- Printed Success -->
+    <string name="invoice_printed_n_successfully">Invoice Printed \n Successfully!</string>
+    <string name="back_to_main">Back to main</string>
+    <string name="developed_by_epicSoft">Developed by EpicSoft</string>
+    <string name="instant_invoice">Instant Invoice</string>
+
+    <!-- Dialog add my item -->
+    <string name="add_new_item">Add New Item</string>
+    <string name="item_image">Item Image</string>
+    <string name="item_name">Item Name</string>
+    <string name="description_of_item">Description of item</string>
+    <string name="item_price">Item Price</string>
+    <string name="price_of_the_item">Price of the item</string>
+    <string name="remove">Remove</string>
+    <string name="cancel_add_item_dialog">Cancel</string>
+    <string name="add">Add</string>
+
+    <!-- add shop info -->
+    <string name="welcome_to">Welcome to</string>
+    <string name="instant_invoice_title_add_shop_info">Instant Invoice</string>
+    <string name="please_fill_some_information_below">Please fill some information below!</string>
+    <string name="these_information_are_used_to_display_in_the_receipt">These Information are used to display in the receipt.</string>
+    <string name="we_recommend_to_set_up_this_now">We recommend to set up this now!</string>
+    <string name="set_up_shop_information">Set Up Shop Information</string>
+    <string name="shop_logo_name_title">Shop Logo</string>
+    <string name="remove_tv_btn">Remove</string>
+    <string name="enter_business_phone_number_hint">Enter business phone number</string>
+    <string name="phone_title">Phone:</string>
+    <string name="enter_business_address_hint">Enter business address</string>
+    <string name="address_title">Address:</string>
+    <string name="enter_business_name_hint">Enter business name</string>
+    <string name="name_title">Name:</string>
+    <string name="message_title">Message:</string>
+    <string name="eg_thanks_for_shopping_with_us_hint">eg. Thanks for shopping with us!</string>
+    <string name="thanks_for_shopping_with_us_txt">Thanks for shopping with us!</string>
+    <string name="currency_title">Currency:</string>
+    <string name="shop_phone_number_4_optional">Shop phone number 4 (optional)</string>
+    <string name="you_can_change_these_information_later_in_application_settings">You can change these information later in application settings.</string>
+    <string name="skip_btn">Skip</string>
+    <string name="set_btn">Set</string>
+    <string name="add_more_phone_number">Add more phone number +</string>
+    <string name="type_currency_hint">Type Currency</string>
+    <string name="shop_phone_number_3_optional">Shop phone number 3 (optional)</string>
+    <string name="shop_phone_number_2_optional">Shop phone number 2 (optional)</string>
+    <string name="shop_address_3_optional">Shop address 3 (optional)</string>
+    <string name="shop_address_2_optional">Shop address 2 (optional)</string>
+    <string name="add_more_address">Add more address +</string>
+
+    <!-- change invoice bg -->
+    <string name="color_backgrounds_txt">Color backgrounds</string>
+    <string name="image_backgrounds_txt">Image Backgrounds</string>
+    <string name="my_background_txt">My Background</string>
+    <string name="edit_txt">Edit</string>
+    <string name="reset_to_default_color_txt">Reset to default color</string>
+
+    <!--    Business Details -->
+    <string name="shop_logo">Shop Logo</string>
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
+    <string name="phoneNumber">Enter business phone number</string>
+    <string name="Messages">Thanks for shopping with us!</string>
+    <string name="hintMessage">Eg. Thanks for shopping with us!</string>
+    <string name="thanks_note">Thanks for shopping with us!</string>
+    <string name="remove_btn_edit_shop_info">Remove</string>
+    <string name="name_title_business_detail">Name:</string>
+    <string name="enter_business_name_hint_info">Enter business name</string>
+    <string name="address_title_business_info">Address:</string>
+    <string name="enter_business_address">Enter business address</string>
+    <string name="phone_title_business_info">Phone:</string>
+    <string name="message_title_business_info">Message:</string>
+    <string name="currency_title_business_info">Currency:</string>
+    <string name="type_currency_info">Type Currency</string>
+
+    <!-- Help Screen -->
+    <string name="how_to_print_invoice">How To Print Invoice</string>
+    <string name="help_txt">help</string>
+
+    <!-- Main Screen -->
+    <string name="instant_invoice_title_main">Instant Invoice</string>
+    <string name="instant_invoices_sub_title_main">Instant Invoices</string>
+    <string name="order_id_hint_main">Order ID</string>
+    <string name="order_date_hint_main">Order Date</string>
+    <string name="customer_information_title_main">Customer Information</string>
+    <string name="add_to_favourites_txt_btn_main">Add to favourites (+)</string>
+    <string name="customer_name_hint_main">Customer Name</string>
+    <string name="customer_address_hint_main">Customer Address</string>
+    <string name="customer_phone_hint_main">Customer Phone</string>
+    <string name="optionals_title">Optionals</string>
+    <string name="delivery_fees_hint_main">Delivery Fees</string>
+    <string name="advance_paid_hint_main">Advance Paid</string>
+    <string name="tax_rate_hint_main">Tax rate%</string>
+    <string name="discount_hint_main">Discount%</string>
+    <string name="paid_stamp_txt">Paid Stamp</string>
+    <string name="add_items_main">Add Items</string>
+    <string name="clear_all_main">Clear All</string>
+    <string name="invoice_decorations">Invoice Decorations</string>
+    <string name="invoice_color_txt_main">Invoice Color</string>
+    <string name="background_txt_main">Background</string>
+    <string name="change_title_10font_style_txt_main">Change Title 10Font Style</string>
+    <string name="invoice_preview_txt_main">Invoice Preview</string>
+    <string name="instant_invoice_main">Instant Invoice</string>
+    <string name="invoice_information_main">Invoice Information</string>
+    <string name="order_id_txt_main">Order ID -</string>
+    <string name="order_date_txt_main">Order Date -</string>
+    <string name="customer_information_txt_main">Customer Information</string>
+    <string name="name_txt_main">Name -</string>
+    <string name="address_txt_main">Address -</string>
+    <string name="phone_txt_main">Phone -</string>
+    <string name="no_title_main">No</string>
+    <string name="item_description_title_main">Item Description</string>
+    <string name="qty_title_main">Qty</string>
+    <string name="unit_price_title_main">Unit Price</string>
+    <string name="total_title_main">Total</string>
+    <string name="shop_name_info_main">Shop Name</string>
+    <string name="shop_address_info_main">Shop Address</string>
+    <string name="shop_phone_info_main">Shop Phone</string>
+    <string name="subtotal_txt_main">Subtotal:</string>
+    <string name="discount_txt_main">Discount %</string>
+    <string name="tax_txt_main">Tax %</string>
+    <string name="delivery_fees_txt_main">Delivery Fees:</string>
+    <string name="grand_total_txt_main">Grand Total -</string>
+    <string name="grand_total_space_txt_main">-</string>
+    <string name="advance_txt_main">Advance -</string>
+    <string name="tv_advance_space_main">-</string>
+    <string name="balance_txt_main">Balance -</string>
+    <string name="tv_balance_space_main">-</string>
+    <string name="thanks_for_shopping_with_us_main">Thanks for shopping with us!</string>
+    <string name="save_to_gallery_btn_main">Save to Gallery</string>
+
+    <!-- My fav customer -->
+    <string name="no_favourite_customers_added_yet">No favourite customers added yet!</string>
+
+    <!-- My items -->
+    <string name="no_items_added_yet">No Items added yet!</string>
+
+    <!-- Printed Receipts -->
+    <string name="no_printed_receipts">No Printed Receipts</string>
+
+    <!-- Rv Card My customer -->
+    <string name="id_Rv_card_my_customer">ID</string>
+    <string name="customer_name_rv_my_customer">CustomerName</string>
+    <string name="customer_address_rv_my_customer">CustomerAddress</string>
+    <string name="customer_phone_rv_my_customer">CustomerPhone</string>
+
+    <!-- Rv Card My Items -->
+    <string name="item_name_rv_card">ItemName</string>
+    <string name="item_price_rv_card">ItemPrice</string>
+    <string name="in_stock_rv_card">InStock:</string>
+
+    <!-- Rv Card printed invoice -->
+    <string name="customer_name_rv_card_printed_invoice">CustomerName</string>
+    <string name="phone_number_rv_card_printed_invoice">Phone Number</string>
+    <string name="item_rv_card_printed_invoice">Price -</string>
+    <string name="id_rc_card_printed_invoice">ID</string>
+
+    <!-- See printed invoice -->
+    <string name="thanks_for_shopping_with_us">Thanks for shopping with us!</string>
+    <string name="subtotal_see_printed">Subtotal:</string>
+    <string name="tax_see_printed">Tax %</string>
+    <string name="discount_see_printed">Discount %</string>
+    <string name="delivery_fees_see_printed">Delivery Fees:</string>
+    <string name="grand_total_see_printed">Grand Total -</string>
+    <string name="advance_see_printed">Advance -</string>
+    <string name="balance_see_printed">Balance -</string>
+    <string name="shop_name_see_printed">Shop Name</string>
+    <string name="shop_address_see_printed">Shop Address</string>
+    <string name="shop_phone_see_printed">Shop Phone</string>
+    <string name="no_see_printed">No</string>
+    <string name="item_description_see_printed">Item Description</string>
+    <string name="qty_see_printed">Qty</string>
+    <string name="unit_price_see_printed">Unit Price</string>
+    <string name="total_see_printed">Total</string>
+    <string name="phone_see_printed">Phone -</string>
+    <string name="name_see_printed">Name -</string>
+    <string name="address_see_printed">Address -</string>
+    <string name="customer_information_see_printed">Customer Information</string>
+    <string name="order_id_see_printed">Order ID -</string>
+    <string name="order_date_see_printed">Order Date -</string>
+    <string name="invoice_information_see_printed">Invoice Information</string>
+    <string name="instant_invoice_see_printed">Instant Invoice</string>
+    <string name="save_to_gallery_see_printed">Save to Gallery</string>
+
+    <!-- Output quality choose dialog -->
+    <string name="output_image_quality_dialog_main">Output image quality</string>
+    <string name="higher_image_quality_will_use_more_storage_dialog_main">Higher image quality will use more storage.</string>
+    <string name="high_dialog_main">High</string>
+    <string name="medium_dialog_main">Medium</string>
+    <string name="low_dialog_main">Low</string>
+    <string name="cancel_dialog_main">Cancel</string>
+    <string name="ok_dialog_main">OK</string>
+
+    <!-- nav header -->
+    <string name="jhone_doe_nav_header">Jhone Doe</string>
+    <string name="_12345_6789_nav_header">+12345 6789</string>
+
+    <!-- Dialog edit invoice -->
+    <string name="update_dialog_edit_invoice">Update</string>
+    <string name="cancel_dialog_edit_invoice">Cancel</string>
+    <string name="paid_stamp_dialog_edit_invoice">Paid Stamp</string>
+    <string name="edit_invoice_details_dialog_edit_invoice">Edit Invoice Details</string>
+    <string name="order_id_dialog_edit_invoice">Order ID:</string>
+    <string name="order_date_dialog_edit_invoice">Order Date:</string>
+    <string name="customer_name_dialog_edit_invoice">Customer Name:</string>
+    <string name="customer_address_dialog_edit_invoice">Customer Address:</string>
+    <string name="customer_phone_dialog_edit_invoice">Customer Phone:</string>
+    <string name="delivery_fees_dialog_edit_invoice">Delivery Fees:</string>
+    <string name="advance_paid_dialog_edit_invoice">Advance Paid:</string>
+    <string name="tax_rate_dialog_edit_invoice">Tax rate%</string>
+    <string name="discount_dialog_edit_invoice">Discount%</string>
+    <string name="add_items_dialog_edit_invoice">Add Items</string>
+    <string name="to_edit_existing_items_click_on_the_item_you_want_to_edit_in_the_printed_invoice_dialog_edit_invoice">***To edit existing items, click on the item you want to edit in the printed invoice</string>
+
+    <!-- Delete dialog -->
+    <string name="delete_item_dialog_delete">Delete Item?</string>
+    <string name="are_you_sure_you_want_to_delete_this_item_this_cannot_be_undone_dialog_delete">Are you sure you want to delete this item? This cannot be undone.</string>
+    <string name="cancel_dialog_delete">Cancel</string>
+    <string name="delete_dialog_delete">Delete</string>
+
+    <!-- Choose font dialog -->
+    <string name="default_font_choose_font">Default font</string>
+    <string name="poppins_normal">Poppins</string>
+    <string name="montserrat_regular">Montserrat</string>
+    <string name="inter_regular">Inter</string>
+    <string name="roboto_regular">Roboto</string>
+    <string name="moulpali_regular">Moulpali</string>
+    <string name="murecho_regular">Murecho</string>
+    <string name="mplus1p_regular">Mplus1p</string>
+    <string name="port_lligat_sans_regular">PortLligatSans</string>
+    <string name="pontano_sans_regular">PontanoSans</string>
+    <string name="poly_regular">Poly</string>
+    <string name="shop_title_font_choose_font">Shop Title Font</string>
+    <string name="set_choose_font">Set</string>
+    <string name="cancel_choose_font">Cancel</string>
+
+    <!-- Add new customer dialog -->
+    <string name="add_new_customer_dialog">Add New Customer</string>
+    <string name="name_add_new_customer_dialog">Name:</string>
+    <string name="customer_name_hint_add_new_customer_dialog">Customer Name</string>
+    <string name="address_add_new_customer_dialog">Address:</string>
+    <string name="customer_address_hint">Customer Address</string>
+    <string name="phone_add_new_customer_dialog">Phone:</string>
+    <string name="customer_phone_hint_add_new_customer_dialog">Customer Phone</string>
+    <string name="cancel_add_new_customer_dialog">Cancel</string>
+    <string name="add_add_new_customer_dialog">Add</string>
+
+    <!-- Add new item dialog -->
+    <string name="add_new_item_dialog">Add New Item</string>
+    <string name="cancel_add_new_dialog">Cancel</string>
+    <string name="add_add_new_dialog">Add</string>
+    <string name="item_count_add_new_dialog">item count</string>
+    <string name="_1_add_new_dialog">1</string>
+    <string name="_1_add_new_dialog1">1</string>
+    <string name="price_per_item_add_new_dialog">Price per item</string>
+    <string name="name_of_the_item_add_new_dialog">Name of the item</string>
+
+    <!-- add new dialog -->
+    <string name="item_name_add_new">Item Name:</string>
+    <string name="item_count_add_new">Item Count:</string>
+    <string name="price_per_item_add_new">Price per item :</string>
+
+    <!-- Ads -->
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video_ad_unit_id">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="native_ad_unit_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_video_ad_unit_id">ca-app-pub-3940256099942544/1044960115</string>
+
+    <string-array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </string-array>
+
+    <string-array name="com_google_android_gms_fonts_certs_dev">
+        <item>MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=</item>
+    </string-array>
+
+    <string-array name="com_google_android_gms_fonts_certs_prod">
+        <item>MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK</item>
+    </string-array>
+</resources>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="30dp"
+    android:fillViewport="true"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="8"
+            android:fontFamily="@font/poppins_normal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:shadowDy="3"
+            android:text="@string/edit_invoice_details_dialog_edit_invoice"
+            android:textColor="@color/title_field_color_blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Order Id -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/order_id_dialog_edit_invoice"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_update_order_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_shape_10dp"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_normal"
+                android:hint="@string/order_id_hint_main"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="15"
+                android:minHeight="50dp"
+                android:paddingHorizontal="12dp"
+                android:textColor="#595959"
+                android:textColorHint="@color/hint_text_color"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Order Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/order_date_dialog_edit_invoice"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_update_order_date"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_shape_10dp"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_normal"
+                android:hint="@string/order_date_hint_main"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:minHeight="50dp"
+                android:paddingHorizontal="12dp"
+                android:textColor="#595959"
+                android:textColorHint="@color/hint_text_color"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Customer Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/customer_name_dialog_edit_invoice"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_update_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_shape_10dp"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_normal"
+                android:hint="@string/customer_name_hint_main"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:maxLength="35"
+                android:minHeight="50dp"
+                android:paddingHorizontal="12dp"
+                android:textColor="#595959"
+                android:textColorHint="@color/hint_text_color"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- Customer Address -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/customer_address_dialog_edit_invoice"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_update_customer_address"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_shape_10dp"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_normal"
+                android:hint="@string/customer_address_hint_main"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:maxLength="150"
+                android:minHeight="50dp"
+                android:paddingHorizontal="12dp"
+                android:textColor="#595959"
+                android:textColorHint="@color/hint_text_color"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- Customer Phone -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/customer_phone_dialog_edit_invoice"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_update_customer_phone"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_shape_10dp"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_normal"
+                android:hint="@string/customer_phone_hint_main"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:maxLength="150"
+                android:minHeight="50dp"
+                android:paddingHorizontal="12dp"
+                android:textColor="#595959"
+                android:textColorHint="@color/hint_text_color"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- Deli Fees -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/delivery_fees_dialog_edit_invoice"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_update_deli_fee"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_shape_10dp"
+                android:digits="1234567890."
+                android:ems="10"
+                android:fontFamily="@font/poppins_normal"
+                android:hint="@string/delivery_fees_hint_main"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:minHeight="50dp"
+                android:paddingHorizontal="12dp"
+                android:textColor="#595959"
+                android:textColorHint="@color/hint_text_color"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- Advance paid -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/advance_paid_dialog_edit_invoice"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_update_advance"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_shape_10dp"
+                android:digits="1234567890."
+                android:ems="10"
+                android:fontFamily="@font/poppins_normal"
+                android:hint="@string/advance_paid_hint_main"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:minHeight="50dp"
+                android:paddingHorizontal="12dp"
+                android:textColor="#595959"
+                android:textColorHint="@color/hint_text_color"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- Tax -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/tax_rate_dialog_edit_invoice"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_update_tax"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_shape_10dp"
+                android:digits="1234567890."
+                android:ems="10"
+                android:fontFamily="@font/poppins_normal"
+                android:hint="@string/tax_rate_hint_main"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:minHeight="50dp"
+                android:paddingHorizontal="12dp"
+                android:textColor="#595959"
+                android:textColorHint="@color/hint_text_color"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- Discount -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_normal"
+                android:text="@string/discount_dialog_edit_invoice"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_update_discount"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_shape_10dp"
+                android:digits="1234567890."
+                android:ems="10"
+                android:fontFamily="@font/poppins_normal"
+                android:hint="@string/discount_hint_main"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:minHeight="50dp"
+                android:paddingHorizontal="12dp"
+                android:textColor="#595959"
+                android:textColorHint="@color/hint_text_color"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- Add item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_update_add_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/button_gradiant"
+                android:fontFamily="@font/poppins_normal"
+                android:padding="10dp"
+                android:text="@string/add_items_dialog_edit_invoice"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <!-- paid checkbox -->
+            <CheckBox
+                android:id="@+id/cb_update_paid_stamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:buttonTint="@color/colorBlue4"
+                android:fontFamily="@font/poppins_normal"
+                android:gravity="center"
+                android:text="@string/paid_stamp_dialog_edit_invoice"
+                android:textColor="@color/title_field_color_blue"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dialog_update_invoice_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/bg_white_radius_13dp"
+                android:elevation="2dp"
+                android:paddingVertical="10dp"
+                android:shadowColor="#9ccdfd"
+                android:text="@string/cancel_dialog_edit_invoice"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlue4"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dialog_update_invoice_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_gradiant"
+                android:elevation="2dp"
+                android:paddingVertical="10dp"
+                android:shadowColor="#9ccdfd"
+                android:text="@string/update_dialog_edit_invoice"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

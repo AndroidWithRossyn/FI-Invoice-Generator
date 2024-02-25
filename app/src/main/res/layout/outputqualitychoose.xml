@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_delete_caption21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="@font/poppins_normal"
+        android:gravity="center_vertical"
+        android:text="@string/output_image_quality_dialog_main"
+        android:textColor="@color/title_field_color_blue"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/note_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_normal"
+        android:paddingHorizontal="15dp"
+        android:text="@string/higher_image_quality_will_use_more_storage_dialog_main"
+        android:textColor="@color/title_field_color_blue" />
+
+    <!--  Radio Buttons   -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radioButton_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorBlue4"
+            android:fontFamily="@font/poppins_normal"
+            android:text="@string/high_dialog_main"
+            android:textColor="@color/title_field_color_blue" />
+
+        <RadioButton
+            android:id="@+id/radioButton_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorBlue4"
+            android:fontFamily="@font/poppins_normal"
+            android:text="@string/medium_dialog_main"
+            android:textColor="@color/title_field_color_blue" />
+
+        <RadioButton
+            android:id="@+id/radioButton_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorBlue4"
+            android:fontFamily="@font/poppins_normal"
+            android:text="@string/low_dialog_main"
+            android:textColor="@color/title_field_color_blue" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_dialog_cancel_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_radius_13dp"
+            android:fontFamily="@font/poppins_normal"
+            android:shadowColor="#9ccdfd"
+            android:text="@string/cancel_dialog_main"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlue4"
+            android:textSize="14sp" />
+        <!-- add btn -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_dialog_ok_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_gradiant"
+            android:fontFamily="@font/poppins_normal"
+            android:text="@string/ok_dialog_main"
+            android:textAllCaps="false"
+            android:textColor="@color/my_white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <item
+        app:itemTextAppearance="@style/menu_text_style"
+        android:id="@+id/menu_item_printed_invoices"
+        android:title="@string/printed_invoices_title" />
+    <item
+        app:itemTextAppearance="@style/menu_text_style"
+        android:id="@+id/menu_item_my_items"
+        android:title="@string/my_items_title" />
+    <item
+        app:itemTextAppearance="@style/menu_text_style"
+        android:id="@+id/menu_item_fav_customers"
+        android:title="@string/favourite_customers_title" />
+    <item
+        app:itemTextAppearance="@style/menu_text_style"
+        android:id="@+id/menu_item_setting"
+        android:title="@string/business_info_settings_title" />
+    <item
+        app:itemTextAppearance="@style/menu_text_style"
+        android:id="@+id/menu_item_image_quality"
+        android:title="@string/output_image_quality_title" />
+    <item
+        app:itemTextAppearance="@style/menu_text_style"
+        android:id="@+id/menu_item_help"
+        android:title="@string/how_to_use_title" />
+    <item
+        app:itemTextAppearance="@style/menu_text_style"
+        android:id="@+id/menu_item_about"
+        android:title="@string/about_this_app_title" />
+    <item
+        app:itemTextAppearance="@style/menu_text_style"
+        android:id="@+id/menu_item_rate_us"
+        android:title="@string/rate_us_title" />
+    <item
+        app:itemTextAppearance="@style/menu_text_style"
+        android:id="@+id/menu_item_share_app"
+        android:title="@string/share_with_friends_title" />
+</menu>

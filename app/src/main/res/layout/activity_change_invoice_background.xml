@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/my_white">
+
+        <TextView
+            android:id="@+id/tv_bt_set_default_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_normal"
+            android:text="@string/reset_to_default_color_txt"
+            android:textColor="@color/title_field_color_blue"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="#0571c6"
+            android:fontFamily="@font/poppins_normal"
+            android:paddingHorizontal="5dp"
+            android:text="@string/color_backgrounds_txt"
+            android:textColor="#f3f3f3"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bt_set_default_color" />
+
+        <Button
+            android:id="@+id/bt_bg_blue"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/color_bg_blue"
+            app:layout_constraintStart_toStartOf="@+id/textView33"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <Button
+            android:id="@+id/bt_bg_green"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            android:background="@color/color_background_green"
+            app:layout_constraintStart_toEndOf="@+id/bt_bg_blue"
+            app:layout_constraintTop_toTopOf="@+id/bt_bg_blue" />
+
+        <Button
+            android:id="@+id/bt_bg_yellow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            android:background="@color/color_background_yellow"
+            app:layout_constraintStart_toEndOf="@+id/bt_bg_green"
+            app:layout_constraintTop_toTopOf="@+id/bt_bg_green" />
+
+        <Button
+            android:id="@+id/bt_bg_pink"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            android:background="@color/color_background_pink"
+            app:layout_constraintStart_toEndOf="@+id/bt_bg_yellow"
+            app:layout_constraintTop_toTopOf="@+id/bt_bg_yellow" />
+
+        <Button
+            android:id="@+id/bt_bg_violet"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            android:background="@color/color_background_violet"
+            app:layout_constraintStart_toEndOf="@+id/bt_bg_pink"
+            app:layout_constraintTop_toTopOf="@+id/bt_bg_pink" />
+
+        <Button
+            android:id="@+id/bt_bg_orange"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/color_background_orange"
+            app:layout_constraintStart_toStartOf="@+id/bt_bg_blue"
+            app:layout_constraintTop_toBottomOf="@+id/bt_bg_blue" />
+
+        <Button
+            android:id="@+id/bt_bg_green2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            android:background="@color/color_background_green2"
+            app:layout_constraintStart_toEndOf="@+id/bt_bg_orange"
+            app:layout_constraintTop_toTopOf="@+id/bt_bg_orange" />
+
+        <Button
+            android:id="@+id/bt_bg_violet2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            android:background="@color/color_background_violet2"
+            app:layout_constraintStart_toEndOf="@+id/bt_bg_green2"
+            app:layout_constraintTop_toTopOf="@+id/bt_bg_green2" />
+
+        <Button
+            android:id="@+id/bt_bg_blue2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            android:background="@color/color_background_blue2"
+            app:layout_constraintStart_toEndOf="@+id/bt_bg_violet2"
+            app:layout_constraintTop_toTopOf="@+id/bt_bg_violet2" />
+
+        <Button
+            android:id="@+id/bt_bg_grey"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            android:background="@color/color_background_grey"
+            app:layout_constraintStart_toEndOf="@+id/bt_bg_blue2"
+            app:layout_constraintTop_toTopOf="@+id/bt_bg_blue2" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:background="#0571c6"
+            android:fontFamily="@font/poppins_normal"
+            android:paddingHorizontal="5dp"
+            android:text="@string/image_backgrounds_txt"
+            android:textColor="#f3f3f3"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_bg_orange" />
+
+        <ImageView
+            android:id="@+id/iv_bt_bg_img1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="@+id/textView34"
+            app:layout_constraintTop_toBottomOf="@+id/textView34"
+            app:srcCompat="@drawable/wp1" />
+
+        <ImageView
+            android:id="@+id/iv_bt_bg_img2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/iv_bt_bg_img1"
+            app:layout_constraintTop_toTopOf="@+id/iv_bt_bg_img1"
+            app:srcCompat="@drawable/wp2" />
+
+        <ImageView
+            android:id="@+id/iv_bt_bg_img3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/iv_bt_bg_img2"
+            app:layout_constraintTop_toTopOf="@+id/iv_bt_bg_img2"
+            app:srcCompat="@drawable/wp3" />
+
+        <ImageView
+            android:id="@+id/iv_bt_bg_img4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_bt_bg_img3"
+            app:layout_constraintTop_toTopOf="@+id/iv_bt_bg_img3"
+            app:srcCompat="@drawable/wp4" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/poppins_normal"
+            android:text="@string/my_background_txt"
+            android:textColor="@color/title_field_color_blue"
+            app:layout_constraintStart_toStartOf="@+id/iv_bt_bg_img1"
+            app:layout_constraintTop_toBottomOf="@+id/iv_bt_bg_img1" />
+
+        <ImageView
+            android:id="@+id/iv_bt_bg_my_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView37"
+            app:layout_constraintTop_toBottomOf="@+id/textView37"
+            app:srcCompat="@drawable/frame_rv_list_pink" />
+
+        <TextView
+            android:id="@+id/tv_bt_change_my_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins_normal"
+            android:text="@string/edit_txt"
+            android:textColor="@color/title_field_color_blue"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_bt_bg_my_image"
+            app:layout_constraintStart_toEndOf="@+id/iv_bt_bg_my_image"
+            app:layout_constraintTop_toTopOf="@+id/iv_bt_bg_my_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

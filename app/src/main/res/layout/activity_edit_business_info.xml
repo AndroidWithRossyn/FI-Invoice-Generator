@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="onBackClick"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!--        Toolbar     -->
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/common_toolbar"
+                app:onBackClick="@{onBackClick}"
+                app:title="@{title}" />
+
+            <!--        Company Logo     -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_company_logo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_company_logo" />
+
+                    <TextView
+                        android:id="@+id/tv_shop_logo_title_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_normal"
+                        android:text="@string/shop_logo"
+                        android:textColor="@color/title_field_color_blue"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_remove_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/remove_btn_edit_shop_info"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/poppins_normal"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical">
+
+                <!--        Name Field      -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name_title_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_normal"
+                        android:text="@string/name_title_business_detail"
+                        android:textColor="@color/title_field_color_blue"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_shop_name_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/card_shape_10dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppins_normal"
+                        android:hint="@string/enter_business_name_hint_info"
+                        android:importantForAutofill="no"
+                        android:inputType="textPersonName"
+                        android:minHeight="50dp"
+                        android:paddingHorizontal="12dp"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!--        Address Field     -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_address_title_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_normal"
+                        android:text="@string/address_title_business_info"
+                        android:textColor="@color/title_field_color_blue"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_shop_address_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/card_shape_10dp"
+                        android:fontFamily="@font/poppins_normal"
+                        android:gravity="start"
+                        android:hint="@string/enter_business_address"
+                        android:importantForAutofill="no"
+                        android:inputType="textMultiLine"
+                        android:minHeight="50dp"
+                        android:paddingHorizontal="12dp"
+                        android:textAlignment="viewStart"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!--        Phone Field     -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_phone_title_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_normal"
+                        android:text="@string/phone_title_business_info"
+                        android:textColor="@color/title_field_color_blue"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_shop_phone_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/card_shape_10dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppins_normal"
+                        android:hint="@string/phoneNumber"
+                        android:importantForAutofill="no"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="10"
+                        android:minHeight="50dp"
+                        android:paddingHorizontal="12dp"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!--        Message Field     -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_message_title_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_normal"
+                        android:text="@string/message_title_business_info"
+                        android:textColor="@color/title_field_color_blue"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_bottom_message_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/card_shape_10dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppins_normal"
+                        android:hint="@string/hintMessage"
+                        android:importantForAutofill="no"
+                        android:inputType="textPersonName"
+                        android:minHeight="50dp"
+                        android:paddingHorizontal="12dp"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!--        Currency Spinner     -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_currency_title_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_normal"
+                        android:text="@string/currency_title_business_info"
+                        android:textColor="@color/title_field_color_blue"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_shape_10dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_currency_edit"
+                            style="@style/spinner_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_iv_arrow_down" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_create_currency"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="@string/type_currency_info"
+                        android:importantForAutofill="no"
+                        android:inputType="textPersonName"
+                        android:maxLength="15"
+                        android:minHeight="40dp"
+                        android:clickable="false"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--        Submit Buttons     -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_cancel_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/poppins_normal"
+                    android:background="@drawable/bg_white_radius_13dp"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlue4"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_update_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_gradiant"
+                    android:text="@string/update"
+                    android:fontFamily="@font/poppins_normal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

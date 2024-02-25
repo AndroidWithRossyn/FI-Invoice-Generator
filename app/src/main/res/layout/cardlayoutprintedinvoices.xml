@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/et_adapter_round_shape_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_id_printed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_normal"
+                android:gravity="start"
+                android:padding="15dp"
+                android:text="@string/id_rc_card_printed_invoice"
+                android:visibility="gone"
+                android:textAlignment="gravity"
+                android:textColor="@color/title_field_color_blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_person_rv_card"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_iv_person" />
+
+                    <TextView
+                        android:id="@+id/tv_customer_name_printed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toLeftOf="@id/btn_goto_edit_invoice"
+                        android:layout_toRightOf="@id/iv_person_rv_card"
+                        android:fontFamily="@font/poppins_normal"
+                        android:lineSpacingExtra="8sp"
+                        android:text="@string/customer_name_rv_my_customer"
+                        android:textAllCaps="false"
+                        android:textColor="@color/title_field_color_blue" />
+
+                    <ImageButton
+                        android:id="@+id/btn_goto_edit_invoice"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:background="@color/transparent"
+                        android:contentDescription="@null"
+                        android:elevation="5dp"
+                        android:visibility="visible"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        app:srcCompat="@drawable/ic_iv_edit" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_phone_rv_card"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ic_iv_phone" />
+
+                    <TextView
+                        android:id="@+id/tv_phone_number_printed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/poppins_normal"
+                        android:lineSpacingExtra="8sp"
+                        android:text="@string/customer_address_rv_my_customer"
+                        android:layout_toRightOf="@id/iv_phone_rv_card"
+                        android:textAllCaps="false"
+                        android:textColor="@color/title_field_color_blue" />
+
+                    <ImageButton
+                        android:id="@+id/bt_call"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/transparent"
+                        android:contentDescription="@null"
+                        android:elevation="5dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_baseline_call_24123" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_location_rv_card"
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ic_price" />
+
+                    <TextView
+                        android:id="@+id/tv_item_printed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/poppins_normal"
+                        android:lineSpacingExtra="8sp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/customer_phone_rv_my_customer"
+                        android:textAlignment="gravity"
+                        android:layout_toRightOf="@id/iv_location_rv_card"
+                        android:textAllCaps="false"
+                        android:layout_toLeftOf="@+id/btn_delete_from_list"
+                        android:textColor="@color/title_field_color_blue" />
+
+                    <ImageButton
+                        android:id="@+id/btn_delete_from_list"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:background="@color/transparent"
+                        android:contentDescription="@null"
+                        android:elevation="5dp"
+                        android:visibility="visible"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        app:srcCompat="@drawable/ic_iv_delete" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.ads.nativetemplates.TemplateView
+            android:id="@+id/printed_my_template"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:gnt_template_type="@layout/gnt_small_template_view" />
+    </LinearLayout>
+</layout>
